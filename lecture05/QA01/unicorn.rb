@@ -6,7 +6,7 @@ worker_processes 2
 working_directory rails_root
 
 listen "#{rails_root}/unicorn.sock"
-listen 8080
+listen 80
 pid "#{rails_root}/unicorn.pid"
 
 stderr_path "#{rails_root}/log/unicorn_error.log"
